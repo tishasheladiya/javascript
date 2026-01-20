@@ -24,7 +24,7 @@ Javascript Variable
 }
 </p>
 <p>console.log(x);</p>
-<p>Answer or Error: 2</p>
+<p>Answer or ancd Error: 2</p>
 <p>Why : -</p>
 </div>
  
