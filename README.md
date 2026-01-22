@@ -108,4 +108,78 @@ on console.log
 <p>Why : - </p>
 </div>
  
- 
+ <!-- ---------------------------ternary ----------------------------------------------- -->
+# Ternary Operator (Conditional Operator)
+
+Ternary Operator એ `if-else` condition ને **એક જ line માં લખવાની short way** છે.  
+આ operator code ને **short, clean અને readable** બનાવે છે.
+
+---
+
+## Syntax
+
+```js
+condition ? expression_if_true : expression_if_false;
+
+How It Works
+
+Condition true હોય તો ? પછીનો code execute થાય
+
+Condition false હોય તો : પછીનો code execute થાય
+
+Example
+let age = 18;
+
+let result = age >= 18 ? "Eligible to vote" : "Not eligible to vote";
+
+console.log(result);
+
+Output
+Eligible to vote
+
+Example (Find Maximum Number)
+let a = 10;
+let b = 20;
+
+let max = a > b ? a : b;
+
+console.log(max);
+
+Output
+20
+
+Example (Login Check)
+let isLoggedIn = false;
+
+let message = isLoggedIn ? "Welcome User" : "Please Login";
+
+console.log(message);
+
+if-else vs Ternary Operator
+if-else
+if (age >= 18) {
+    result = "Adult";
+} else {
+    result = "Minor";
+}
+
+Ternary Operator
+result = age >= 18 ? "Adult" : "Minor";
+
+When to Use Ternary Operator
+
+Simple condition માટે
+
+Code short રાખવા માટે
+
+Complex logic માટે avoid કરવો
+
+Key Points
+
+Ternary Operator ને Conditional Operator પણ કહે છે
+
+? : symbols વપરાય છે
+
+JavaScript, Java, C, C++, PHP માં support કરે છે
+
+Code readability improve કરે છે
