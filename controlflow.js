@@ -244,17 +244,17 @@ while (q <= 68){
 let d1= 55;
 while (d1 <= 60) {
      console.log(d1);
-     d++;
+     d1++;
 }
 
-// let f = 50;
-// while (f <= 60) {
-//      console.log(f);
-//      f--;
-// }
+let f1 = 50;
+while (f1 <= 60) {
+     console.log(f1);
+     f1++;
+}
 
-// let q = 50;
-// while (q <= 60) {
-//      console.log(q);
-//      --q;
-// }
+let q1 = 50;
+while (q1 <= 60) {
+     console.log(q1);
+     q1++;
+}
