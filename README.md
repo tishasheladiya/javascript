@@ -503,3 +503,216 @@ for(let i =1; i<=100; i++){
 }
 </p>
 </div>
+
+<!-- ```````````````````````````````````````````````````````````````````````````````````````````` -->
+
+## Function Examples
+<hr>
+<div>
+<h1> Example 1: </h1>
+<p>What's the difference between function declaration and function expression in terms of hoisting?</p>
+<p></p>
+</div>
+
+<div>
+<h1> Example 2: </h1>
+<p>greet();</p>
+<p>function greet(){
+    console.log("Hello!");
+}</p>
+<p>Ans or Err and Why</p>
+</div>
+
+<div>
+<h1> Example 3: </h1>
+<p>Convert normal function to Arrow Function</p>
+<p>function add(a, b){
+    return a + b;
+}</p>
+<p>Ans And How</p>
+</div>
+
+<div>
+<h1> Example 4: </h1>
+<p>Identify what is parms and what is args</p>
+<p>function welcome(name){
+    console.log("Welcome " + name);
+}</p>
+<p>welcome("user");</p>
+<p>Ans and why</p>
+</div>
+
+<div>
+<h1> Example 5: </h1>
+<p>how many parameters and args</p>
+<p>function temp (a, b, c){
+    console.log(a,b,c);
+}</p>
+<p>temp(1, 2)</p>
+<p> Ans, Err and Why</p>
+</div>
+
+<div>
+<h1> Example 6: </h1>
+<p>Predict the output</p>
+<p>function temp_user(name = "Guest"){
+    console.log("Hello " + name);
+}</p>
+<p>temp_user();</p>
+<p>Ans, Err and Why</p>
+</div>
+
+<div>
+<h1> Example 7: </h1>
+<p>what is ... operator and why use it  in function</p>
+<p>function number(...numbers){
+    console.log(numbers);
+}</p>
+<p>number(1, 2, 3, 4, 5)</p>
+<p>Ans, Err and why</p>
+</div>
+
+<div>
+<h1> Example 8: </h1>
+<p>Use rest Parameters to accept any number of scores and return the total</p>
+<p>function calculateTotal(...scores){
+    let total = 0;
+    for(let i=0; i<=scores.length; i++){
+        total += scores[i];
+    }
+    return total;
+}</p>
+<p>function calculateTotal(...scores){
+    let total = 0;
+    scores.forEach(function(val){
+        total = total + val;
+    });
+    return total;
+}</p>
+<p>calculateTotal(10, 20 ,30 ,40 ,50)</p>
+<p>let sumtotal = calculateTotal(10, 20 ,30 ,40 ,50)</p>
+<p>Ans, Err and Why</p>
+</div>
+
+<div>
+<h1> Example 9: </h1>
+<p>Fix the function using early return</p>
+<p>function checkAge(age){
+    if(age < 18){
+        console.log("Too Young");
+    } else {
+        console.log("Access Granted");
+    }
+}</p>
+<p>Ans And how</p>
+</div>
+
+<div>
+<h1> Example 10: </h1>
+<p>What is the return value of above function</p>
+<p>function f(){ return;}</p>
+<p>Ans and Why</p>
+</div>
+
+/////////// ```````````````````````````````````````````````````````````
+// Q1. push()
+// You are building a to-do app. Add a new task 'Buy milk' to the tasks array.
+let tasks = ['Wake up', 'Brush teeth'];
+
+// Q2. pop()
+// Remove the last notification from the notifications array.
+let notifications = ['Email', 'Message', 'Reminder'];
+
+// Q3. shift()
+// A queue system removes the first customer. Remove the first customer.
+let customers = ['Customer1', 'Customer2', 'Customer3'];
+
+// Q4. unshift()
+// A new song is added to the beginning of the playlist.
+let playlist = ['Song B', 'Song C'];
+
+// Q5. splice()
+// In a classroom list, remove 'Alex' and add 'John' and 'Sara' in the same position.
+let students = ['Mike', 'Alex', 'Emma', 'Sophia'];
+
+// Q6. splice()
+// From the menu, remove 2 items starting from index 1.
+let menu = ['Burger', 'Pizza', 'Pasta', 'Salad'];
+
+// Q7. slice()
+// Create a new array that contains only weekend days.
+let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
+// Q8. reverse()
+// Reverse the order of levels in a game.
+let levels = ['Easy', 'Medium', 'Hard'];
+
+// Q9. sort()
+// Sort the scores in ascending order.
+let scores = [45, 12, 78, 34, 89];
+
+// Q10. sort() with numbers
+// Sort the prices from lowest to highest.
+let prices = [199, 49, 999, 299, 149];
+
+// Q11. slice() vs splice()
+// From the array, create a new array of the first 3 items WITHOUT changing the original array.
+let products = ['Laptop', 'Phone', 'Tablet', 'Monitor', 'Keyboard'];
+
+// Q12. splice() complex
+// In the array below:
+// 1. Remove 'Blue'
+// 2. Add 'Purple' and 'Orange' at the same position
+let colors = ['Red', 'Green', 'Blue', 'Yellow'];
+ans:colors.splice(2, 1, 'Purple', 'Orange')
+
+// Q13. reverse() + push()
+// Reverse the array and then add 'Final Step' at the end.
+let steps = ['Step 1', 'Step 2', 'Step 3'];
+
+// Q14. sort() strings
+// Sort names alphabetically, ignoring case sensitivity.
+let names = ['alice', 'Bob', 'charlie', 'David'];
+ans: names.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()))
+
+// Q15. Combination Question
+// You are managing a movie watchlist:
+// 1. Add 'Inception'
+// 2. Remove the first movie
+// 3. Sort the list alphabetically
+let movies = ['Avatar', 'Titanic', 'Gladiator'];
+
+// Q16. splice() return value
+// What does the splice method return in this case?
+let nums1 = [1, 2, 3, 4];
+nums1.splice(1, 2);
+
+// Q17. slice() immutability check
+// After executing slice, does the original array change?
+let nums2 = [10, 20, 30, 40];
+let result = nums2.slice(1, 3);
+
+// Q19. reverse() mutation
+// After reversing, what happens to the original array reference?
+let letters = ['a', 'b', 'c'];
+let reversedLetters = letters.reverse();
+
+// Q21. splice() edge case
+// What happens if deleteCount is 0?
+let arr = ['x', 'y', 'z'];
+arr.splice(1, 0, 'new');
+
+// Q23. slice() negative index
+// What elements are returned?
+let values = [100, 200, 300, 400, 500];
+let sliced = values.slice(-3, -1);
+
+// Q24. splice() vs slice() decision
+// Which method would you use if you want to:
+// a) Update the original array
+// b) Keep the original array unchanged
+
+// Q25. Chained methods (brain teaser)
+// What is the final value of arr?
+let arr2 = [1, 2, 3];
+arr2.push(arr2.shift());
