@@ -133,6 +133,80 @@ if (d === undefined && e === null) {
 // Using === null will NOT detect undefined
 // Using === undefined will NOT detect null
 
+// 6. null == undefined but strict is false
+console.log("\nQ6:");
+console.log(null == undefined);   // true  (loose equality)
+console.log(null === undefined);  // false (strict equality)
+
+
+// 7. Type coercion using c + b
+console.log("\nQ7:");
+console.log(c + b); // "1010" (number becomes string)
+
+// Fix:
+console.log("\nQ7:");
+console.log(c + Number(b)); // 20
+console.log(c + +b);        // 20
+
+
+// 8. Check NaN after division
+console.log("\nQ8:");
+let result = c / "a";
+console.log(result); // NaN
+console.log(Number.isNaN(result)); // true
+
+
+// 9. Convert b to number (two ways)
+console.log("\nQ9:");
+let num1 = Number(b);
+let num2 = +b;
+console.log(num1, num2); // 10 10
+
+
+// 10. Convert c to string (two ways)
+console.log("\nQ10:");
+let str1 = String(c);
+let str2 = c.toString();
+console.log(str1, str2); // "10" "10"
+
+
+// 11. Convert any value to boolean
+console.log("\nQ11:");
+console.log(Boolean(c)); // true
+console.log(!!c);        // true
+
+
+// 12. const reassignment error
+console.log("\nQ12:");
+const x = 100;
+// x = 200; // ❌ Error: Assignment to constant variable
+
+
+// 13. Primitive copy proof
+console.log("\nQ13:");
+let original = 50;
+let copy = original;
+copy = 100;
+
+console.log(original); // 50
+console.log(copy);     // 100
+
+
+// 14. Looks true but false
+console.log("\nQ14:");
+console.log([] == []); // false (different references)
+
+
+// 15. Fix implicit type conversion bug
+console.log("\nQ15:");
+let value1 = "5";
+let value2 = 5;
+
+console.log(value1 == value2);  // true (coercion)
+console.log(value1 === value2); // false
+
+// Fix:
+console.log(Number(value1) === value2); // true
 
 // ======================================================
 // END OF FILE
