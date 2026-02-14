@@ -716,3 +716,75 @@ let sliced = values.slice(-3, -1);
 // What is the final value of arr?
 let arr2 = [1, 2, 3];
 arr2.push(arr2.shift());
+
+// # JavaScript Interview Questions & Answers (1–50)
+
+// ================ BEGINNER LEVEL (1–20) ================
+
+// Q1. var vs let vs const
+// var → function scoped, redeclare allowed, hoisted
+// let → block scoped, cannot redeclare
+// const → block scoped, cannot reassign
+
+// Q2. Primitive Data Types
+// string, number, boolean, undefined, null, bigint, symbol
+
+// Q3. Type Checking
+// Use typeof operator
+
+// Q4. == vs ===
+// == value comparison (type conversion allowed)
+// === value + datatype comparison
+
+// Q5. Output → 20
+// Q6. Output → "52"
+// Q7. Output → false
+// Q8. Function → reusable block of code
+// Q9. Output → 5
+// Q10. Array → let arr = [1,2,3];
+// Q11. Output → 20
+// Q12. Object → key-value pair collection
+// Q13. Output → 20
+// Q14. if → runs code if condition true
+// Q15. Output → Yes
+// Q16. Loop → repeat code
+// Q17. Output → 0 1 2
+// Q18. while → when iterations unknown
+// Q19. Output → 6
+// Q20. Comments → // single line, /* multi line */
+
+// ================ INTERMEDIATE LEVEL (21–35) ================
+
+// Q21. Block Scope → let/const inside {} only accessible inside block
+// Q22. Hoisting → declarations moved to top before execution
+// Q23. undefined vs null → undefined = not assigned, null = intentional empty
+// Q24. Falsy → false, 0, "", null, undefined, NaN
+// Q25. Arrow vs Normal → arrow has no own this
+// Q26. Parameters vs Arguments → definition vs passed values
+// Q27. No return → returns undefined
+// Q28. push vs pop → add end vs remove end
+// Q29. Loops vs Methods → loops for complex control, methods for cleaner code
+// Q30. Object loop → for...in / Object.keys()
+// Q31. break stops, continue skips
+// Q32. 0 == false → true, 0 === false → false
+// Q33. status = age >= 18 ? 'adult' : status;
+// Q34. Destructuring → let [a,b] = [1,2];
+// Q35. Spread → [...arr]
+
+// ================ ADVANCED LEVEL (36–50) ================
+
+// Q36. Closure → function remembering outer variable
+// Q37. Execution Context → environment where JS runs
+// Q38. Call Stack → tracks function calls
+// Q39. Value vs Reference → primitives copy value, objects copy reference
+// Q40. Shallow vs Deep → partial copy vs full copy
+// Q41. Higher Order → function takes/returns function
+// Q42. Callback → function passed as argument
+// Q43. Immutability → prevents accidental data change
+// Q44. Event Loop → handles async tasks
+// Q45. Sync vs Async → blocking vs non-blocking
+// Q46. forEach vs map → no return vs returns new array
+// Q47. [] == [] → false
+// Q48. typeof null → "object"
+// Q49. NaN check → Number.isNaN(value)
+// Q50. JS Flow → Global context → Memory phase → Execution phase → Call stack → Event loop
