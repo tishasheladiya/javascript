@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        form{
+            padding: 20px;
+        }
+        .card{
+            width: 250px;
+            height: auto;
+            border: 1px solid red;
+            margin: 10px 20px;
+            padding: 10px;
+            display: inline-block;
+        }
+        .dp-img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .dp-img img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create a card</h1>
+    <form action="">
+        link<input type="text" placeholder="paste link for profile image">
+        <br>
+        name<input type="text" placeholder="name" />
+        <br>
+        bio<input type="text" placeholder="bio" />
+        <br>
+        email<input type="email" placeholder="email" />
+        <br>
+        phone number<input type="tel" placeholder="phone number" />
+        <br>
+        <input type="submit" value="submit" />
+    </form>
+    <script src="submit.js"></script>
+</body>
+</html>

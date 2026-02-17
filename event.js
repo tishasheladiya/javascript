@@ -68,3 +68,60 @@ select.addEventListener("change", (dets) => {
   console.log(dets.target.value);
   device.textContent = dets.target.value;
 });
+
+// event task
+
+let box = document.querySelector(".box");
+let bg_inp = document.querySelector(".bg-inp");
+let color_inp = document.querySelector(".color-inp");
+
+bg_inp.addEventListener("change", (dets) => {
+    box.style.backgroundColor = dets.target.value;
+});
+
+color_inp.addEventListener("change", (dets) => {
+    box.style.borderColor = dets.target.value;
+});
+
+//submit
+let form = document.querySelector("form");
+form.addEventListener("submit", () => {
+    document.body.style.backgroundColor = "red";
+});
+
+// // mousemove and mouseout
+// let box2 = document.querySelector(".box2");
+
+// let box2.addEventListener("mousemove", () => {
+//     box2.style.backgroundColor = "red";
+//     box2.style.width = "300px";
+// });
+
+// box2.addEventListener("mouseout", () => {
+//     box2.style.backgroundColor = "white";
+//     box2.style.width = "100px";
+// }):
+
+// Mousemove & Mouseout (FIXED)
+let box2 = document.querySelector(".box2");
+
+box2.addEventListener("mousemove", () => {
+    box2.style.backgroundColor = "red";
+    box2.style.width = "300px";
+});
+
+box2.addEventListener("mouseout", () => {
+    box2.style.backgroundColor = "white";
+    box2.style.width = "200px";
+});
+
+// key Down
+let text = document.querySelector(".keydown");
+
+text.addEventListener("keydown", () => {
+    text.style.backgroundColor="black";
+    text.style.color="white";
+    text.style.width="5rem";
+});
+
+//
