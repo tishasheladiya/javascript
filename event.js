@@ -60,4 +60,11 @@ inp.addEventListener("input", (dets) => {
     }
 });
 
-//
+// change -- when you change elements state
+let select = document.querySelector(".sel");
+let device = document.querySelector(".device");
+
+select.addEventListener("change", (dets) => {
+  console.log(dets.target.value);
+  device.textContent = dets.target.value;
+});
