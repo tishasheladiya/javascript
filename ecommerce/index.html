@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="index.html">
+      Urban Jungle
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navMenu">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <a class="nav-link" href="cart.html">
+            Cart 🛒 <span id="cart-count">(0)</span>
+        </a>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<!-- hero section -->
+<section class="hero-section">
+
+    <div class="hero-content">
+
+        <h1>Welcome to Urban Jungle Co.</h1>
+
+        <p>Discover the Beauty of Nature at Your Fingertips</p>
+
+        <a href="shop.html" class="shop-btn">Shop Now</a>
+
+    </div>
+
+</section>
+
+<!-- Products Section -->
+
+<section class="products-section">
+
+    <div class="container">
+
+        <h2 class="section-title">Featured Products</h2>
+
+        <div class="row" id="products-container">
+
+            <!-- Products JS thi aavse -->
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Banner Section -->
+
+<section class="promo-banner">
+
+    <div class="banner-content">
+
+        <h2>Summer Collection</h2>
+
+        <p>Up to 30% OFF on Selected Plants</p>
+
+        <a href="shop.html" class="banner-btn">Shop Now</a>
+
+    </div>
+
+</section>
+
+<!-- Testimonials Section -->
+
+<section class="testimonials">
+
+    <div class="container">
+
+      <h2 class="section-title">What Our Customers Say</h2>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="testimonial-card">
+
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+                    <p>
+                    Amazing quality plants! My home feels so fresh and lively now.
+                    </p>
+
+                    <h5>Sarah Johnson</h5>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="testimonial-card">
+
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+                    <p>
+                    Fast delivery and healthy plants. Highly recommended store!
+                    </p>
+
+                    <h5>Michael Smith</h5>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="testimonial-card">
+
+                    <img src="https://randomuser.me/api/portraits/women/65.jpg">
+
+                    <p>
+                    Beautiful collection and very affordable prices.
+                    </p>
+
+                    <h5>Emma Williams</h5>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Newsletter Section -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Get updates about new plants and special offers</p>
+
+        <div class="newsletter-form">
+
+            <input type="email" placeholder="Enter your email">
+
+            <button>Subscribe</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Footer Section -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- About -->
+            <div class="col-md-3">
+                <h4>Urban Jungle</h4>
+                <p>
+                Bringing nature closer to your home with beautiful plants and accessories.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3">
+                <h4>Quick Links</h4>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Help -->
+            <div class="col-md-3">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-3">
+                <h4>Contact</h4>
+                <p>Email: support@urbanjungle.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="footer-bottom">
+            © 2026 Urban Jungle. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/products.js"></script>
+</body>
+</html>

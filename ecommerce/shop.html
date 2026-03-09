@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="index.html">
+      Urban Jungle
+    </a>
+
+    <!-- Mobile Menu Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse" id="navMenu">
+
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="shop.html">Shop</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+        <a class="nav-link" href="cart.html">
+          Cart 🛒 <span id="cart-count">(0)</span>
+        </a>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+<div class="row mb-4">
+
+<div class="col-md-6">
+<input type="text" id="search-input" class="form-control" placeholder="Search products...">
+</div>
+
+<div class="col-md-6 text-end">
+<select id="category-filter" class="form-select">
+<option value="all">All Categories</option>
+</select>
+</div>
+
+</div>
+
+<div class="container mt-5">
+
+  <h2 class="text-center mb-4">Shop Plants</h2>
+
+  <div class="row" id="shop-products">
+
+   <!-- Products JS thi load thase -->
+
+  </div>
+
+</div>
+
+
+
+
+<!-- Footer Section -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <!-- About -->
+            <div class="col-md-3">
+                <h4>Urban Jungle</h4>
+                <p>
+                Bringing nature closer to your home with beautiful plants and accessories.
+                </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-3">
+                <h4>Quick Links</h4>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Help -->
+            <div class="col-md-3">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div class="col-md-3">
+                <h4>Contact</h4>
+                <p>Email: support@urbanjungle.com</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="footer-bottom">
+            © 2026 Urban Jungle. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/shop.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
