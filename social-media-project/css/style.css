@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --ig-bg: #fafafa;
+    --ig-border: #dbdbdb;
+    --ig-text: #262626;
+    --ig-secondary: #8e8e8e;
+    --ig-link: #0095f6;
+    --ig-story-ring: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+body {
+    background-color: var(--ig-bg);
+    font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--ig-text);
+    font-size: 14px;
+}
+
+/* Instagram Header */
+.ig-navbar {
+    background: white;
+    border-bottom: 1px solid var(--ig-border);
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.ig-logo {
+    font-family: 'Palatino', serif;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -1px;
+    text-decoration: none;
+    color: var(--ig-text);
+}
+
+/* Stories Section */
+.story-container {
+    background: white;
+    border: 1px solid var(--ig-border);
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    margin-bottom: 24px;
+}
+
+.story-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 66px;
+}
+
+.story-ring {
+    width: 66px;
+    height: 66px;
+    padding: 2px;
+    background: var(--ig-story-ring);
+    border-radius: 50%;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.story-avatar {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--ig-text);
+    object-fit: cover;
+}
+
+/* Feed Post Card */
+.ig-post {
+    background: white;
+    border: 1px solid var(--ig-border);
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.post-header {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.post-avatar-sm {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #efefef;
+    margin-right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.post-image-container {
+    width: 100%;
+    aspect-ratio: 1/1;
+    background: #f1f1f1;
+}
+
+.post-actions {
+    padding: 12px 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-actions i {
+    font-size: 24px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    margin-right: 16px;
+}
+
+.post-actions i:last-child {
+    margin-right: 0;
+}
+
+.post-actions i:hover {
+    opacity: 0.6;
+}
+
+.post-details {
+    padding: 0 14px 14px;
+}
+
+/* Profile Grid */
+.profile-stat-item {
+    margin-right: 40px;
+}
+
+.ig-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 40px;
+}
+
+.grid-photo-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.grid-photo-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s;
+}
+
+.grid-photo-wrapper:hover img {
+    filter: brightness(0.8);
+}
+
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-weight: 600;
+    gap: 20px;
+}
+
+.grid-photo-wrapper:hover .grid-overlay {
+    opacity: 1;
+}
+
+/* Typography & Helpers */
+.fw-semibold {
+    font-weight: 600;
+}
+
+.text-ig-secondary {
+    color: var(--ig-secondary);
+}
+
+.text-ig-link {
+    color: var(--ig-link);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Skeleton */
+.skeleton {
+    background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+    background-size: 200% 100%;
+    animation: skeleton-loading 1.5s infinite;
+    border-radius: 4px;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}

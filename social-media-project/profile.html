@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | SocialSphere</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+        .profile-avatar-lg {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 1px solid #dbdbdb;
+            padding: 4px;
+        }
+
+        .profile-avatar-lg div {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: #efefef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: 700;
+        }
+
+        .profile-nav-tabs {
+            border-top: 1px solid #dbdbdb;
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-top: 50px;
+        }
+
+        .profile-nav-item {
+            padding: 18px 0;
+            color: #8e8e8e;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 1px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .profile-nav-item.active {
+            color: #262626;
+            border-top: 1px solid #262626;
+            margin-top: -1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- IG Navbar -->
+    <nav class="ig-navbar mb-4">
+        <div class="container d-flex justify-content-between align-items-center h-100">
+            <a href="index.html" class="ig-logo">SocialSphere</a>
+            <div class="d-flex gap-4 fs-4 align-items-center h-100">
+                <i class="bi bi-house-door cursor-pointer" onclick="location.href='index.html'"></i>
+                <i class="bi bi-plus-square cursor-pointer"></i>
+                <i class="bi bi-compass cursor-pointer"></i>
+                <i class="bi bi-heart cursor-pointer"></i>
+                <div class="post-avatar-sm" style="width: 24px; height: 24px; font-size: 8px; margin-right: 0;">JD</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="max-width: 935px;">
+        <!-- Profile Header -->
+        <div class="row mb-5">
+            <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <div class="profile-avatar-lg">
+                    <div id="p-avatar">?</div>
+                </div>
+            </div>
+            <div class="col-md-8 pt-3">
+                <div class="d-flex align-items-center mb-4">
+                    <h2 class="fw-normal mb-0" id="p-username">loading...</h2>
+                    <button class="btn btn-sm btn-outline-dark fw-bold ms-4 px-3" style="border-radius: 4px;">Edit
+                        Profile</button>
+                    <i class="bi bi-gear-wide ms-3 fs-4 cursor-pointer"></i>
+                </div>
+
+                <div class="d-flex mb-4">
+                    <div class="profile-stat-item"><span class="fw-bold" id="p-postCount">0</span> posts</div>
+                    <div class="profile-stat-item"><span class="fw-bold">1.2k</span> followers</div>
+                    <div class="profile-stat-item"><span class="fw-bold">850</span> following</div>
+                </div>
+
+                <div>
+                    <div class="fw-bold" id="p-fullname">Loading...</div>
+                    <div id="p-bio" class="text-secondary small">Web Developer & Creative Director</div>
+                    <a href="#" class="text-ig-link" id="p-website">www.example.com</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Tabs -->
+        <div class="profile-nav-tabs">
+            <div class="profile-nav-item active"><i class="bi bi-grid-3x3"></i> Posts</div>
+            <div class="profile-nav-item"><i class="bi bi-play-btn"></i> Reels</div>
+            <div class="profile-nav-item"><i class="bi bi-person-square"></i> Tagged</div>
+        </div>
+
+        <!-- Profile Grid -->
+        <div id="profileGrid" class="ig-grid-container mb-5">
+            <!-- Populated by JS -->
+            <div class="skeleton" style="aspect-ratio: 1/1;"></div>
+            <div class="skeleton" style="aspect-ratio: 1/1;"></div>
+            <div class="skeleton" style="aspect-ratio: 1/1;"></div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/posts.js"></script>
+</body>
+
+</html>
